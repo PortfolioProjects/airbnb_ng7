@@ -4,13 +4,13 @@ class FakeDb {
   constructor() {
     this.rentals = [
       {
-        title: 'Nice view on ocean',
-        city: 'San Francisco',
-        street: 'Main street',
-        category: 'condo',
+        title: 'Nice view on the center',
+        city: 'Sofia',
+        street: 'Ivaylo 25',
+        category: 'apartment',
         image:
           'https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg',
-        bedrooms: 4,
+        bedrooms: 2,
         shared: true,
         description: 'Very nice apartment in center of the city.',
         dailyRate: 43
@@ -29,8 +29,8 @@ class FakeDb {
       },
       {
         title: 'Old house in nature',
-        city: 'Spisska Nova Ves',
-        street: 'Banicka 1',
+        city: 'Bansko',
+        street: 'Turist 2',
         category: 'house',
         image:
           'https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg',
