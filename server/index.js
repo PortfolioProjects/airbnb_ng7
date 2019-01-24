@@ -12,11 +12,11 @@ mongoose
     {
       useNewUrlParser: true
     }
-  )
-  .then(() => {
-    const fakeDb = new FakeDb();
-    fakeDb.seedDb();
-  });
+  );
+  // .then(() => {
+  //   const fakeDb = new FakeDb();
+  //   fakeDb.seedDb();
+  // });
 
 const app = express();
 
