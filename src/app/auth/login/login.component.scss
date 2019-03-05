@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.btn-bwm {
+  border-color: $main-color;
+  background-color: $main-color;
+  color: #fff;
+
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    border-color: $main-color !important;
+    color: $main-color !important;
+    box-shadow: none;
+  }
+}

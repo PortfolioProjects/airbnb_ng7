@@ -33,9 +33,9 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: transparent;
+      background-color: $main-color;
       border-color: $main-color !important;
-      color: $main-color !important;
+      color: #fff !important;
       box-shadow: none;
     }
   }
