@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -12,14 +12,16 @@
   "private": true,
   "dependencies": {
     "@agm/core": "^1.0.0-beta.5",
-    "@angular/animations": "~7.2.0",
-    "@angular/common": "~7.2.0",
-    "@angular/compiler": "~7.2.0",
-    "@angular/core": "~7.2.0",
-    "@angular/forms": "~7.2.0",
-    "@angular/platform-browser": "~7.2.0",
-    "@angular/platform-browser-dynamic": "~7.2.0",
-    "@angular/router": "~7.2.0",
+    "@angular/animations": "~7.2.7",
+    "@angular/common": "~7.2.7",
+    "@angular/compiler": "~7.2.7",
+    "@angular/core": "~7.2.7",
+    "@angular/forms": "~7.2.7",
+    "@angular/platform-browser": "~7.2.7",
+    "@angular/platform-browser-dynamic": "~7.2.7",
+    "@angular/router": "~7.2.7",
+    "@auth0/angular-jwt": "^2.1.0",
+    "@types/jquery": "^3.3.29",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.2.1",
@@ -28,18 +30,22 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
     "mongoose": "^5.4.5",
+    "ng2-daterangepicker": "^2.0.12",
     "ngx-pipes": "^2.3.6",
+    "ngx-toastr": "^9.1.2",
     "popper.js": "^1.14.6",
-    "rxjs": "~6.3.3",
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.4.0",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.29"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.12.0",
-    "@angular/cli": "~7.2.1",
-    "@angular/compiler-cli": "~7.2.0",
-    "@angular/language-service": "~7.2.0",
+    "@angular/cli": "^7.3.4",
+    "@angular/compiler-cli": "^7.2.7",
+    "@angular/language-service": "~7.2.7",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -53,8 +59,9 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "nodemon": "^1.18.9",
     "protractor": "~5.4.0",
+    "rxjs-tslint": "^0.1.7",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.2.2"
+    "typescript": "~3.2.4"
   }
 }
