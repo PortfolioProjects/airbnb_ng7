@@ -18,7 +18,7 @@ export class HelperService {
     const dateEndAt = moment(endAt);
     let dateStartAt = moment(startAt);
 
-    while (dateStartAt < dateEndAt) {
+    while (dateStartAt <= dateEndAt) {
       tempDates.push(dateStartAt.format(dateFormat));
       dateStartAt = dateStartAt.add(1, 'day');
     }
