@@ -12,6 +12,7 @@ import { DaterangePickerComponent } from 'ng2-daterangepicker';
 
 import { Booking } from '../../booking/shared/booking.model';
 import { Rental } from '../shared/rental.model';
+import { AuthService } from '../../auth/shared/auth.service';
 import { BookingService } from '../../booking/shared/booking.service';
 import { HelperService } from '../../common/service/helper.service';
 
@@ -42,6 +43,7 @@ export class RentalBookingComponent implements OnInit {
   };
 
   constructor(
+    public auth: AuthService,
     private helper: HelperService,
     private bookingService: BookingService,
     private toastr: ToastrService,

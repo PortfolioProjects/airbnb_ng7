@@ -15,6 +15,10 @@
       <div class="col-md-8">
         <div class="rental">
           <h2 class="rental-type {{rental.category}}">{{rental.shared ? "Shared" : "Entire"}} {{rental.category}}</h2>
+          <div class="rental-owner">
+            <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807__340.png" alt="avatar">
+            <span>{{rental.user.username}}</span>
+          </div>
           <h1 class="rental-title">{{rental.title}}</h1>
           <h2 class="rental-city">{{rental.city | upper}}</h2>
           <div class="rental-room-info">
