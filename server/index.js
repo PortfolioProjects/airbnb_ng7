@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const config = require('./config/dev');
+const path = require('path');
 
 // const FakeDb = require('./fake-db');
 
@@ -23,6 +24,13 @@ app.use(bodyParser.json());
 app.use('/api/v1/rentals', rentalRoutes);
 app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/bookings', bookingRoutes);
+
+const appPath = path.join(__dirname, '..', 'dist/airbnb-ng');
+app.use(express.static(appPath));
+
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(appPath, 'index.html'));
+});
 
 app.listen(config.PORT, function() {
   console.log(`Server is running at port ${config.PORT}`);
