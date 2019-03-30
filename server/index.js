@@ -35,6 +35,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(config.PORT, function() {
-  console.log(`Server is running at port ${config.PORT}`);
+app.listen(3001, function() {
+  console.log('Server is running at port 3001');
 });
