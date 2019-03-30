@@ -46,3 +46,4 @@ Thumbs.db
 
 .vscode
 /server/config/dev.js
+/server/config/prod.js

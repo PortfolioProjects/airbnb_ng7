@@ -26,7 +26,9 @@
               <span>Price: </span>
               <span class="booking-price-value">{{booking.totalPrice}} $</span>
             </p>
-            <a *ngIf="booking.rental" class="btn-bwm" routerLink="/rentals/{{booking.rental._id}}">Go to Rental</a>
+            <button *ngIf="booking.rental" class="btn-bwm">
+              <a routerLink="/rentals/{{booking.rental._id}}">Go to Rental</a>
+            </button>
           </div>
           <div class="card-footer text-muted">
             Created {{booking.createdAt | formatDate}}
