@@ -58,9 +58,10 @@
 
           <div class="form-group">
             <label for="shared">Shared <input type="checkbox" class="form-control" id="shared" name="shared"
-                [(ngModel)]="newRental.shared" required></label>
+                [(ngModel)]="newRental.shared"></label>
           </div>
-          <button type="button" class="btn-bwm" (click)="createRental()">Submit</button>
+          <button type="button" class="btn-bwm" (click)="createRental()"
+            [disabled]="!rentalForm.from.valid">Submit</button>
         </form>
         <div *ngIf="errors.length > 0" class="alert alert-danger">
           <p *ngFor="let error of errors">

@@ -1,14 +1,14 @@
 const User = require('../models/user');
 const { normalizeErrors } = require('../helpers/mongoose');
 const jwt = require('jsonwebtoken');
-const config = require('../config/dev');
+const config = require('../config');
 
 let auth = (req, res) => {
   const { email, password } = req.body;
 
   if (!password || !email) {
     return res.status(422).send({
-      errors: [{ title: 'Data missing', detail: 'Provide email and passwors' }]
+      errors: [{ title: 'Data missing', detail: 'Provide email and password' }]
     });
   }
 
